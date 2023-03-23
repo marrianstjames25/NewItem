@@ -33,5 +33,27 @@ namespace NewItem.Properties {
                 return ((string)(this["SignUpDBConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(LocalDB)\\MSSQLLocalDB;Initial Catalog=Section_126;Integrated Securit" +
+            "y=True")]
+        public string Section_126ConnectionString {
+            get {
+                return ((string)(this["Section_126ConnectionString"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(LocalDB)\\MSSQLLocalDB;Initial Catalog=LibrarySystem;Integrated Secur" +
+            "ity=True")]
+        public string LibrarySystemConnectionString {
+            get {
+                return ((string)(this["LibrarySystemConnectionString"]));
+            }
+        }
     }
 }

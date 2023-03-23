@@ -24,25 +24,13 @@ namespace NewItem
         {
             InitializeComponent();
         }
-        //Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\m.yovchevski\source\repos\NewItem\NewItem\Database1.mdf;Integrated Security=True;
-        private void Window_Loaded(object sender, RoutedEventArgs e)
-        {
 
-            NewItem.SignUpDBDataSet signUpDBDataSet = ((NewItem.SignUpDBDataSet)(this.FindResource("signUpDBDataSet")));
-            // Load data into the table SignupTable_. You can modify this code as needed.
-            NewItem.SignUpDBDataSetTableAdapters.SignupTable_TableAdapter signUpDBDataSetSignupTable_TableAdapter = new NewItem.SignUpDBDataSetTableAdapters.SignupTable_TableAdapter();
-            signUpDBDataSetSignupTable_TableAdapter.Fill(signUpDBDataSet.SignupTable_);
-            System.Windows.Data.CollectionViewSource signupTable_ViewSource = ((System.Windows.Data.CollectionViewSource)(this.FindResource("signupTable_ViewSource")));
-            signupTable_ViewSource.View.MoveCurrentToFirst();
-        }
-
-        private void firstNameComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-            if(firstNameComboBox.SelectedIndex == firstNameComboBox.Items.Count - 1)
-            {
-                MainWindow mw = new MainWindow();
-                mw.Show();
-            }
+       
         }
     }
-}
+
+
+//Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\m.yovchevski\source\repos\NewItem\NewItem\db_one.mdf;Integrated Security=True 
+
+
+

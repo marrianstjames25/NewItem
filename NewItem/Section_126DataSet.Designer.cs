@@ -20,17 +20,17 @@ namespace NewItem {
     [global::System.ComponentModel.DesignerCategoryAttribute("code")]
     [global::System.ComponentModel.ToolboxItem(true)]
     [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedDataSetSchema")]
-    [global::System.Xml.Serialization.XmlRootAttribute("SignUpDBDataSet")]
+    [global::System.Xml.Serialization.XmlRootAttribute("Section_126DataSet")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.DataSet")]
-    public partial class SignUpDBDataSet : global::System.Data.DataSet {
+    public partial class Section_126DataSet : global::System.Data.DataSet {
         
-        private SignupTable_DataTable tableSignupTable_;
+        private UserDataAppDataTable tableUserDataApp;
         
         private global::System.Data.SchemaSerializationMode _schemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public SignUpDBDataSet() {
+        public Section_126DataSet() {
             this.BeginInit();
             this.InitClass();
             global::System.ComponentModel.CollectionChangeEventHandler schemaChangedHandler = new global::System.ComponentModel.CollectionChangeEventHandler(this.SchemaChanged);
@@ -41,7 +41,7 @@ namespace NewItem {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        protected SignUpDBDataSet(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+        protected Section_126DataSet(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                 base(info, context, false) {
             if ((this.IsBinarySerialized(info, context) == true)) {
                 this.InitVars(false);
@@ -54,8 +54,8 @@ namespace NewItem {
             if ((this.DetermineSchemaSerializationMode(info, context) == global::System.Data.SchemaSerializationMode.IncludeSchema)) {
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXmlSchema(new global::System.Xml.XmlTextReader(new global::System.IO.StringReader(strSchema)));
-                if ((ds.Tables["SignupTable_"] != null)) {
-                    base.Tables.Add(new SignupTable_DataTable(ds.Tables["SignupTable_"]));
+                if ((ds.Tables["UserDataApp"] != null)) {
+                    base.Tables.Add(new UserDataAppDataTable(ds.Tables["UserDataApp"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -79,9 +79,9 @@ namespace NewItem {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Browsable(false)]
         [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
-        public SignupTable_DataTable SignupTable_ {
+        public UserDataAppDataTable UserDataApp {
             get {
-                return this.tableSignupTable_;
+                return this.tableUserDataApp;
             }
         }
         
@@ -127,7 +127,7 @@ namespace NewItem {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         public override global::System.Data.DataSet Clone() {
-            SignUpDBDataSet cln = ((SignUpDBDataSet)(base.Clone()));
+            Section_126DataSet cln = ((Section_126DataSet)(base.Clone()));
             cln.InitVars();
             cln.SchemaSerializationMode = this.SchemaSerializationMode;
             return cln;
@@ -152,8 +152,8 @@ namespace NewItem {
                 this.Reset();
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXml(reader);
-                if ((ds.Tables["SignupTable_"] != null)) {
-                    base.Tables.Add(new SignupTable_DataTable(ds.Tables["SignupTable_"]));
+                if ((ds.Tables["UserDataApp"] != null)) {
+                    base.Tables.Add(new UserDataAppDataTable(ds.Tables["UserDataApp"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -188,10 +188,10 @@ namespace NewItem {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         internal void InitVars(bool initTable) {
-            this.tableSignupTable_ = ((SignupTable_DataTable)(base.Tables["SignupTable_"]));
+            this.tableUserDataApp = ((UserDataAppDataTable)(base.Tables["UserDataApp"]));
             if ((initTable == true)) {
-                if ((this.tableSignupTable_ != null)) {
-                    this.tableSignupTable_.InitVars();
+                if ((this.tableUserDataApp != null)) {
+                    this.tableUserDataApp.InitVars();
                 }
             }
         }
@@ -199,18 +199,18 @@ namespace NewItem {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitClass() {
-            this.DataSetName = "SignUpDBDataSet";
+            this.DataSetName = "Section_126DataSet";
             this.Prefix = "";
-            this.Namespace = "http://tempuri.org/SignUpDBDataSet.xsd";
+            this.Namespace = "http://tempuri.org/Section_126DataSet.xsd";
             this.EnforceConstraints = true;
             this.SchemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
-            this.tableSignupTable_ = new SignupTable_DataTable();
-            base.Tables.Add(this.tableSignupTable_);
+            this.tableUserDataApp = new UserDataAppDataTable();
+            base.Tables.Add(this.tableUserDataApp);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private bool ShouldSerializeSignupTable_() {
+        private bool ShouldSerializeUserDataApp() {
             return false;
         }
         
@@ -225,7 +225,7 @@ namespace NewItem {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedDataSetSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
-            SignUpDBDataSet ds = new SignUpDBDataSet();
+            Section_126DataSet ds = new Section_126DataSet();
             global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
             global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
             global::System.Xml.Schema.XmlSchemaAny any = new global::System.Xml.Schema.XmlSchemaAny();
@@ -270,31 +270,25 @@ namespace NewItem {
         }
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public delegate void SignupTable_RowChangeEventHandler(object sender, SignupTable_RowChangeEvent e);
+        public delegate void UserDataAppRowChangeEventHandler(object sender, UserDataAppRowChangeEvent e);
         
         /// <summary>
         ///Represents the strongly named DataTable class.
         ///</summary>
         [global::System.Serializable()]
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
-        public partial class SignupTable_DataTable : global::System.Data.TypedTableBase<SignupTable_Row> {
+        public partial class UserDataAppDataTable : global::System.Data.TypedTableBase<UserDataAppRow> {
             
-            private global::System.Data.DataColumn columnID;
-            
-            private global::System.Data.DataColumn columnFirstName;
-            
-            private global::System.Data.DataColumn columnLastName;
+            private global::System.Data.DataColumn columnUserID;
             
             private global::System.Data.DataColumn columnUsername;
             
             private global::System.Data.DataColumn columnPassword;
             
-            private global::System.Data.DataColumn columnEmail;
-            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public SignupTable_DataTable() {
-                this.TableName = "SignupTable_";
+            public UserDataAppDataTable() {
+                this.TableName = "UserDataApp";
                 this.BeginInit();
                 this.InitClass();
                 this.EndInit();
@@ -302,7 +296,7 @@ namespace NewItem {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            internal SignupTable_DataTable(global::System.Data.DataTable table) {
+            internal UserDataAppDataTable(global::System.Data.DataTable table) {
                 this.TableName = table.TableName;
                 if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
                     this.CaseSensitive = table.CaseSensitive;
@@ -319,32 +313,16 @@ namespace NewItem {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            protected SignupTable_DataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+            protected UserDataAppDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                     base(info, context) {
                 this.InitVars();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn IDColumn {
+            public global::System.Data.DataColumn UserIDColumn {
                 get {
-                    return this.columnID;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn FirstNameColumn {
-                get {
-                    return this.columnFirstName;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn LastNameColumn {
-                get {
-                    return this.columnLastName;
+                    return this.columnUserID;
                 }
             }
             
@@ -366,14 +344,6 @@ namespace NewItem {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn EmailColumn {
-                get {
-                    return this.columnEmail;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -383,57 +353,47 @@ namespace NewItem {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public SignupTable_Row this[int index] {
+            public UserDataAppRow this[int index] {
                 get {
-                    return ((SignupTable_Row)(this.Rows[index]));
+                    return ((UserDataAppRow)(this.Rows[index]));
                 }
             }
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event SignupTable_RowChangeEventHandler SignupTable_RowChanging;
+            public event UserDataAppRowChangeEventHandler UserDataAppRowChanging;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event SignupTable_RowChangeEventHandler SignupTable_RowChanged;
+            public event UserDataAppRowChangeEventHandler UserDataAppRowChanged;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event SignupTable_RowChangeEventHandler SignupTable_RowDeleting;
+            public event UserDataAppRowChangeEventHandler UserDataAppRowDeleting;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event SignupTable_RowChangeEventHandler SignupTable_RowDeleted;
+            public event UserDataAppRowChangeEventHandler UserDataAppRowDeleted;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void AddSignupTable_Row(SignupTable_Row row) {
+            public void AddUserDataAppRow(UserDataAppRow row) {
                 this.Rows.Add(row);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public SignupTable_Row AddSignupTable_Row(string FirstName, string LastName, string Username, string Password, string Email) {
-                SignupTable_Row rowSignupTable_Row = ((SignupTable_Row)(this.NewRow()));
+            public UserDataAppRow AddUserDataAppRow(int UserID, string Username, string Password) {
+                UserDataAppRow rowUserDataAppRow = ((UserDataAppRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
-                        null,
-                        FirstName,
-                        LastName,
+                        UserID,
                         Username,
-                        Password,
-                        Email};
-                rowSignupTable_Row.ItemArray = columnValuesArray;
-                this.Rows.Add(rowSignupTable_Row);
-                return rowSignupTable_Row;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public SignupTable_Row FindByID(int ID) {
-                return ((SignupTable_Row)(this.Rows.Find(new object[] {
-                            ID})));
+                        Password};
+                rowUserDataAppRow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowUserDataAppRow);
+                return rowUserDataAppRow;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public override global::System.Data.DataTable Clone() {
-                SignupTable_DataTable cln = ((SignupTable_DataTable)(base.Clone()));
+                UserDataAppDataTable cln = ((UserDataAppDataTable)(base.Clone()));
                 cln.InitVars();
                 return cln;
             }
@@ -441,74 +401,56 @@ namespace NewItem {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override global::System.Data.DataTable CreateInstance() {
-                return new SignupTable_DataTable();
+                return new UserDataAppDataTable();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             internal void InitVars() {
-                this.columnID = base.Columns["ID"];
-                this.columnFirstName = base.Columns["FirstName"];
-                this.columnLastName = base.Columns["LastName"];
+                this.columnUserID = base.Columns["UserID"];
                 this.columnUsername = base.Columns["Username"];
                 this.columnPassword = base.Columns["Password"];
-                this.columnEmail = base.Columns["Email"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             private void InitClass() {
-                this.columnID = new global::System.Data.DataColumn("ID", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnID);
-                this.columnFirstName = new global::System.Data.DataColumn("FirstName", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnFirstName);
-                this.columnLastName = new global::System.Data.DataColumn("LastName", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnLastName);
+                this.columnUserID = new global::System.Data.DataColumn("UserID", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnUserID);
                 this.columnUsername = new global::System.Data.DataColumn("Username", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnUsername);
                 this.columnPassword = new global::System.Data.DataColumn("Password", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnPassword);
-                this.columnEmail = new global::System.Data.DataColumn("Email", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnEmail);
-                this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
-                                this.columnID}, true));
-                this.columnID.AutoIncrement = true;
-                this.columnID.AutoIncrementSeed = -1;
-                this.columnID.AutoIncrementStep = -1;
-                this.columnID.AllowDBNull = false;
-                this.columnID.ReadOnly = true;
-                this.columnID.Unique = true;
-                this.columnFirstName.MaxLength = 2147483647;
-                this.columnLastName.MaxLength = 2147483647;
+                this.columnUsername.AllowDBNull = false;
                 this.columnUsername.MaxLength = 2147483647;
+                this.columnPassword.AllowDBNull = false;
                 this.columnPassword.MaxLength = 2147483647;
-                this.columnEmail.MaxLength = 2147483647;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public SignupTable_Row NewSignupTable_Row() {
-                return ((SignupTable_Row)(this.NewRow()));
+            public UserDataAppRow NewUserDataAppRow() {
+                return ((UserDataAppRow)(this.NewRow()));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
-                return new SignupTable_Row(builder);
+                return new UserDataAppRow(builder);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override global::System.Type GetRowType() {
-                return typeof(SignupTable_Row);
+                return typeof(UserDataAppRow);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanged(e);
-                if ((this.SignupTable_RowChanged != null)) {
-                    this.SignupTable_RowChanged(this, new SignupTable_RowChangeEvent(((SignupTable_Row)(e.Row)), e.Action));
+                if ((this.UserDataAppRowChanged != null)) {
+                    this.UserDataAppRowChanged(this, new UserDataAppRowChangeEvent(((UserDataAppRow)(e.Row)), e.Action));
                 }
             }
             
@@ -516,8 +458,8 @@ namespace NewItem {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanging(e);
-                if ((this.SignupTable_RowChanging != null)) {
-                    this.SignupTable_RowChanging(this, new SignupTable_RowChangeEvent(((SignupTable_Row)(e.Row)), e.Action));
+                if ((this.UserDataAppRowChanging != null)) {
+                    this.UserDataAppRowChanging(this, new UserDataAppRowChangeEvent(((UserDataAppRow)(e.Row)), e.Action));
                 }
             }
             
@@ -525,8 +467,8 @@ namespace NewItem {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleted(e);
-                if ((this.SignupTable_RowDeleted != null)) {
-                    this.SignupTable_RowDeleted(this, new SignupTable_RowChangeEvent(((SignupTable_Row)(e.Row)), e.Action));
+                if ((this.UserDataAppRowDeleted != null)) {
+                    this.UserDataAppRowDeleted(this, new UserDataAppRowChangeEvent(((UserDataAppRow)(e.Row)), e.Action));
                 }
             }
             
@@ -534,14 +476,14 @@ namespace NewItem {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleting(e);
-                if ((this.SignupTable_RowDeleting != null)) {
-                    this.SignupTable_RowDeleting(this, new SignupTable_RowChangeEvent(((SignupTable_Row)(e.Row)), e.Action));
+                if ((this.UserDataAppRowDeleting != null)) {
+                    this.UserDataAppRowDeleting(this, new UserDataAppRowChangeEvent(((UserDataAppRow)(e.Row)), e.Action));
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void RemoveSignupTable_Row(SignupTable_Row row) {
+            public void RemoveUserDataAppRow(UserDataAppRow row) {
                 this.Rows.Remove(row);
             }
             
@@ -550,7 +492,7 @@ namespace NewItem {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                SignUpDBDataSet ds = new SignUpDBDataSet();
+                Section_126DataSet ds = new Section_126DataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -568,7 +510,7 @@ namespace NewItem {
                 type.Attributes.Add(attribute1);
                 global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
                 attribute2.Name = "tableTypeName";
-                attribute2.FixedValue = "SignupTable_DataTable";
+                attribute2.FixedValue = "UserDataAppDataTable";
                 type.Attributes.Add(attribute2);
                 type.Particle = sequence;
                 global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
@@ -612,57 +554,30 @@ namespace NewItem {
         /// <summary>
         ///Represents strongly named DataRow class.
         ///</summary>
-        public partial class SignupTable_Row : global::System.Data.DataRow {
+        public partial class UserDataAppRow : global::System.Data.DataRow {
             
-            private SignupTable_DataTable tableSignupTable_;
+            private UserDataAppDataTable tableUserDataApp;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            internal SignupTable_Row(global::System.Data.DataRowBuilder rb) : 
+            internal UserDataAppRow(global::System.Data.DataRowBuilder rb) : 
                     base(rb) {
-                this.tableSignupTable_ = ((SignupTable_DataTable)(this.Table));
+                this.tableUserDataApp = ((UserDataAppDataTable)(this.Table));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public int ID {
-                get {
-                    return ((int)(this[this.tableSignupTable_.IDColumn]));
-                }
-                set {
-                    this[this.tableSignupTable_.IDColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string FirstName {
+            public int UserID {
                 get {
                     try {
-                        return ((string)(this[this.tableSignupTable_.FirstNameColumn]));
+                        return ((int)(this[this.tableUserDataApp.UserIDColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'FirstName\' in table \'SignupTable_\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'UserID\' in table \'UserDataApp\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableSignupTable_.FirstNameColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string LastName {
-                get {
-                    try {
-                        return ((string)(this[this.tableSignupTable_.LastNameColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'LastName\' in table \'SignupTable_\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableSignupTable_.LastNameColumn] = value;
+                    this[this.tableUserDataApp.UserIDColumn] = value;
                 }
             }
             
@@ -670,15 +585,10 @@ namespace NewItem {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public string Username {
                 get {
-                    try {
-                        return ((string)(this[this.tableSignupTable_.UsernameColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'Username\' in table \'SignupTable_\' is DBNull.", e);
-                    }
+                    return ((string)(this[this.tableUserDataApp.UsernameColumn]));
                 }
                 set {
-                    this[this.tableSignupTable_.UsernameColumn] = value;
+                    this[this.tableUserDataApp.UsernameColumn] = value;
                 }
             }
             
@@ -686,92 +596,23 @@ namespace NewItem {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public string Password {
                 get {
-                    try {
-                        return ((string)(this[this.tableSignupTable_.PasswordColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'Password\' in table \'SignupTable_\' is DBNull.", e);
-                    }
+                    return ((string)(this[this.tableUserDataApp.PasswordColumn]));
                 }
                 set {
-                    this[this.tableSignupTable_.PasswordColumn] = value;
+                    this[this.tableUserDataApp.PasswordColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string Email {
-                get {
-                    try {
-                        return ((string)(this[this.tableSignupTable_.EmailColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'Email\' in table \'SignupTable_\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableSignupTable_.EmailColumn] = value;
-                }
+            public bool IsUserIDNull() {
+                return this.IsNull(this.tableUserDataApp.UserIDColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsFirstNameNull() {
-                return this.IsNull(this.tableSignupTable_.FirstNameColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetFirstNameNull() {
-                this[this.tableSignupTable_.FirstNameColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsLastNameNull() {
-                return this.IsNull(this.tableSignupTable_.LastNameColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetLastNameNull() {
-                this[this.tableSignupTable_.LastNameColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsUsernameNull() {
-                return this.IsNull(this.tableSignupTable_.UsernameColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetUsernameNull() {
-                this[this.tableSignupTable_.UsernameColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsPasswordNull() {
-                return this.IsNull(this.tableSignupTable_.PasswordColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetPasswordNull() {
-                this[this.tableSignupTable_.PasswordColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsEmailNull() {
-                return this.IsNull(this.tableSignupTable_.EmailColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetEmailNull() {
-                this[this.tableSignupTable_.EmailColumn] = global::System.Convert.DBNull;
+            public void SetUserIDNull() {
+                this[this.tableUserDataApp.UserIDColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -779,22 +620,22 @@ namespace NewItem {
         ///Row event argument class
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public class SignupTable_RowChangeEvent : global::System.EventArgs {
+        public class UserDataAppRowChangeEvent : global::System.EventArgs {
             
-            private SignupTable_Row eventRow;
+            private UserDataAppRow eventRow;
             
             private global::System.Data.DataRowAction eventAction;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public SignupTable_RowChangeEvent(SignupTable_Row row, global::System.Data.DataRowAction action) {
+            public UserDataAppRowChangeEvent(UserDataAppRow row, global::System.Data.DataRowAction action) {
                 this.eventRow = row;
                 this.eventAction = action;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public SignupTable_Row Row {
+            public UserDataAppRow Row {
                 get {
                     return this.eventRow;
                 }
@@ -810,7 +651,7 @@ namespace NewItem {
         }
     }
 }
-namespace NewItem.SignUpDBDataSetTableAdapters {
+namespace NewItem.Section_126DataSetTableAdapters {
     
     
     /// <summary>
@@ -822,7 +663,7 @@ namespace NewItem.SignUpDBDataSetTableAdapters {
     [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
         ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-    public partial class SignupTable_TableAdapter : global::System.ComponentModel.Component {
+    public partial class UserDataAppTableAdapter : global::System.ComponentModel.Component {
         
         private global::System.Data.SqlClient.SqlDataAdapter _adapter;
         
@@ -836,7 +677,7 @@ namespace NewItem.SignUpDBDataSetTableAdapters {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public SignupTable_TableAdapter() {
+        public UserDataAppTableAdapter() {
             this.ClearBeforeFill = true;
         }
         
@@ -933,48 +774,26 @@ namespace NewItem.SignUpDBDataSetTableAdapters {
             this._adapter = new global::System.Data.SqlClient.SqlDataAdapter();
             global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
             tableMapping.SourceTable = "Table";
-            tableMapping.DataSetTable = "SignupTable_";
-            tableMapping.ColumnMappings.Add("ID", "ID");
-            tableMapping.ColumnMappings.Add("FirstName", "FirstName");
-            tableMapping.ColumnMappings.Add("LastName", "LastName");
+            tableMapping.DataSetTable = "UserDataApp";
+            tableMapping.ColumnMappings.Add("UserID", "UserID");
             tableMapping.ColumnMappings.Add("Username", "Username");
             tableMapping.ColumnMappings.Add("Password", "Password");
-            tableMapping.ColumnMappings.Add("Email", "Email");
             this._adapter.TableMappings.Add(tableMapping);
-            this._adapter.DeleteCommand = new global::System.Data.SqlClient.SqlCommand();
-            this._adapter.DeleteCommand.Connection = this.Connection;
-            this._adapter.DeleteCommand.CommandText = "DELETE FROM [dbo].[SignupTable_] WHERE (([ID] = @Original_ID))";
-            this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_ID", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ID", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
-            this._adapter.InsertCommand.CommandText = @"INSERT INTO [dbo].[SignupTable_] ([FirstName], [LastName], [Username], [Password], [Email]) VALUES (@FirstName, @LastName, @Username, @Password, @Email);
-SELECT ID, FirstName, LastName, Username, Password, Email FROM SignupTable_ WHERE (ID = SCOPE_IDENTITY())";
+            this._adapter.InsertCommand.CommandText = "INSERT INTO [dbo].[UserDataApp] ([UserID], [Username], [Password]) VALUES (@UserI" +
+                "D, @Username, @Password)";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@FirstName", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "FirstName", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@LastName", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "LastName", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@UserID", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "UserID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Username", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Username", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Password", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Password", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Email", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Email", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand = new global::System.Data.SqlClient.SqlCommand();
-            this._adapter.UpdateCommand.Connection = this.Connection;
-            this._adapter.UpdateCommand.CommandText = @"UPDATE [dbo].[SignupTable_] SET [FirstName] = @FirstName, [LastName] = @LastName, [Username] = @Username, [Password] = @Password, [Email] = @Email WHERE (([ID] = @Original_ID));
-SELECT ID, FirstName, LastName, Username, Password, Email FROM SignupTable_ WHERE (ID = @ID)";
-            this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@FirstName", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "FirstName", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@LastName", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "LastName", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Username", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Username", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Password", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Password", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Email", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Email", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_ID", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ID", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ID", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "ID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::NewItem.Properties.Settings.Default.SignUpDBConnectionString;
+            this._connection.ConnectionString = global::NewItem.Properties.Settings.Default.Section_126ConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -983,7 +802,7 @@ SELECT ID, FirstName, LastName, Username, Password, Email FROM SignupTable_ WHER
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT ID, FirstName, LastName, Username, Password, Email FROM dbo.SignupTable_";
+            this._commandCollection[0].CommandText = "SELECT UserID, Username, Password FROM dbo.UserDataApp";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
@@ -991,7 +810,7 @@ SELECT ID, FirstName, LastName, Username, Password, Email FROM SignupTable_ WHER
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(SignUpDBDataSet.SignupTable_DataTable dataTable) {
+        public virtual int Fill(Section_126DataSet.UserDataAppDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -1004,9 +823,9 @@ SELECT ID, FirstName, LastName, Username, Password, Email FROM SignupTable_ WHER
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual SignUpDBDataSet.SignupTable_DataTable GetData() {
+        public virtual Section_126DataSet.UserDataAppDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            SignUpDBDataSet.SignupTable_DataTable dataTable = new SignUpDBDataSet.SignupTable_DataTable();
+            Section_126DataSet.UserDataAppDataTable dataTable = new Section_126DataSet.UserDataAppDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -1014,15 +833,15 @@ SELECT ID, FirstName, LastName, Username, Password, Email FROM SignupTable_ WHER
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(SignUpDBDataSet.SignupTable_DataTable dataTable) {
+        public virtual int Update(Section_126DataSet.UserDataAppDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(SignUpDBDataSet dataSet) {
-            return this.Adapter.Update(dataSet, "SignupTable_");
+        public virtual int Update(Section_126DataSet dataSet) {
+            return this.Adapter.Update(dataSet, "UserDataApp");
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1043,59 +862,25 @@ SELECT ID, FirstName, LastName, Username, Password, Email FROM SignupTable_ WHER
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Delete, true)]
-        public virtual int Delete(int Original_ID) {
-            this.Adapter.DeleteCommand.Parameters[0].Value = ((int)(Original_ID));
-            global::System.Data.ConnectionState previousConnectionState = this.Adapter.DeleteCommand.Connection.State;
-            if (((this.Adapter.DeleteCommand.Connection.State & global::System.Data.ConnectionState.Open) 
-                        != global::System.Data.ConnectionState.Open)) {
-                this.Adapter.DeleteCommand.Connection.Open();
-            }
-            try {
-                int returnValue = this.Adapter.DeleteCommand.ExecuteNonQuery();
-                return returnValue;
-            }
-            finally {
-                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
-                    this.Adapter.DeleteCommand.Connection.Close();
-                }
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
-        public virtual int Insert(string FirstName, string LastName, string Username, string Password, string Email) {
-            if ((FirstName == null)) {
+        public virtual int Insert(global::System.Nullable<int> UserID, string Username, string Password) {
+            if ((UserID.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[0].Value = ((int)(UserID.Value));
+            }
+            else {
                 this.Adapter.InsertCommand.Parameters[0].Value = global::System.DBNull.Value;
             }
-            else {
-                this.Adapter.InsertCommand.Parameters[0].Value = ((string)(FirstName));
-            }
-            if ((LastName == null)) {
-                this.Adapter.InsertCommand.Parameters[1].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.InsertCommand.Parameters[1].Value = ((string)(LastName));
-            }
             if ((Username == null)) {
-                this.Adapter.InsertCommand.Parameters[2].Value = global::System.DBNull.Value;
+                throw new global::System.ArgumentNullException("Username");
             }
             else {
-                this.Adapter.InsertCommand.Parameters[2].Value = ((string)(Username));
+                this.Adapter.InsertCommand.Parameters[1].Value = ((string)(Username));
             }
             if ((Password == null)) {
-                this.Adapter.InsertCommand.Parameters[3].Value = global::System.DBNull.Value;
+                throw new global::System.ArgumentNullException("Password");
             }
             else {
-                this.Adapter.InsertCommand.Parameters[3].Value = ((string)(Password));
-            }
-            if ((Email == null)) {
-                this.Adapter.InsertCommand.Parameters[4].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.InsertCommand.Parameters[4].Value = ((string)(Email));
+                this.Adapter.InsertCommand.Parameters[2].Value = ((string)(Password));
             }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
             if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 
@@ -1112,67 +897,6 @@ SELECT ID, FirstName, LastName, Username, Password, Email FROM SignupTable_ WHER
                 }
             }
         }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(string FirstName, string LastName, string Username, string Password, string Email, int Original_ID, int ID) {
-            if ((FirstName == null)) {
-                this.Adapter.UpdateCommand.Parameters[0].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[0].Value = ((string)(FirstName));
-            }
-            if ((LastName == null)) {
-                this.Adapter.UpdateCommand.Parameters[1].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[1].Value = ((string)(LastName));
-            }
-            if ((Username == null)) {
-                this.Adapter.UpdateCommand.Parameters[2].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[2].Value = ((string)(Username));
-            }
-            if ((Password == null)) {
-                this.Adapter.UpdateCommand.Parameters[3].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[3].Value = ((string)(Password));
-            }
-            if ((Email == null)) {
-                this.Adapter.UpdateCommand.Parameters[4].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[4].Value = ((string)(Email));
-            }
-            this.Adapter.UpdateCommand.Parameters[5].Value = ((int)(Original_ID));
-            this.Adapter.UpdateCommand.Parameters[6].Value = ((int)(ID));
-            global::System.Data.ConnectionState previousConnectionState = this.Adapter.UpdateCommand.Connection.State;
-            if (((this.Adapter.UpdateCommand.Connection.State & global::System.Data.ConnectionState.Open) 
-                        != global::System.Data.ConnectionState.Open)) {
-                this.Adapter.UpdateCommand.Connection.Open();
-            }
-            try {
-                int returnValue = this.Adapter.UpdateCommand.ExecuteNonQuery();
-                return returnValue;
-            }
-            finally {
-                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
-                    this.Adapter.UpdateCommand.Connection.Close();
-                }
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(string FirstName, string LastName, string Username, string Password, string Email, int Original_ID) {
-            return this.Update(FirstName, LastName, Username, Password, Email, Original_ID, Original_ID);
-        }
     }
     
     /// <summary>
@@ -1187,7 +911,7 @@ SELECT ID, FirstName, LastName, Username, Password, Email FROM SignupTable_ WHER
         
         private UpdateOrderOption _updateOrder;
         
-        private SignupTable_TableAdapter _signupTable_TableAdapter;
+        private UserDataAppTableAdapter _userDataAppTableAdapter;
         
         private bool _backupDataSetBeforeUpdate;
         
@@ -1209,12 +933,12 @@ SELECT ID, FirstName, LastName, Username, Password, Email FROM SignupTable_ WHER
         [global::System.ComponentModel.EditorAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterManagerPropertyEditor, Microso" +
             "ft.VSDesigner, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3" +
             "a", "System.Drawing.Design.UITypeEditor")]
-        public SignupTable_TableAdapter SignupTable_TableAdapter {
+        public UserDataAppTableAdapter UserDataAppTableAdapter {
             get {
-                return this._signupTable_TableAdapter;
+                return this._userDataAppTableAdapter;
             }
             set {
-                this._signupTable_TableAdapter = value;
+                this._userDataAppTableAdapter = value;
             }
         }
         
@@ -1237,9 +961,9 @@ SELECT ID, FirstName, LastName, Username, Password, Email FROM SignupTable_ WHER
                 if ((this._connection != null)) {
                     return this._connection;
                 }
-                if (((this._signupTable_TableAdapter != null) 
-                            && (this._signupTable_TableAdapter.Connection != null))) {
-                    return this._signupTable_TableAdapter.Connection;
+                if (((this._userDataAppTableAdapter != null) 
+                            && (this._userDataAppTableAdapter.Connection != null))) {
+                    return this._userDataAppTableAdapter.Connection;
                 }
                 return null;
             }
@@ -1254,7 +978,7 @@ SELECT ID, FirstName, LastName, Username, Password, Email FROM SignupTable_ WHER
         public int TableAdapterInstanceCount {
             get {
                 int count = 0;
-                if ((this._signupTable_TableAdapter != null)) {
+                if ((this._userDataAppTableAdapter != null)) {
                     count = (count + 1);
                 }
                 return count;
@@ -1266,14 +990,14 @@ SELECT ID, FirstName, LastName, Username, Password, Email FROM SignupTable_ WHER
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private int UpdateUpdatedRows(SignUpDBDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateUpdatedRows(Section_126DataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
-            if ((this._signupTable_TableAdapter != null)) {
-                global::System.Data.DataRow[] updatedRows = dataSet.SignupTable_.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+            if ((this._userDataAppTableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.UserDataApp.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
                 updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
                 if (((updatedRows != null) 
                             && (0 < updatedRows.Length))) {
-                    result = (result + this._signupTable_TableAdapter.Update(updatedRows));
+                    result = (result + this._userDataAppTableAdapter.Update(updatedRows));
                     allChangedRows.AddRange(updatedRows);
                 }
             }
@@ -1285,13 +1009,13 @@ SELECT ID, FirstName, LastName, Username, Password, Email FROM SignupTable_ WHER
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private int UpdateInsertedRows(SignUpDBDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateInsertedRows(Section_126DataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
-            if ((this._signupTable_TableAdapter != null)) {
-                global::System.Data.DataRow[] addedRows = dataSet.SignupTable_.Select(null, null, global::System.Data.DataViewRowState.Added);
+            if ((this._userDataAppTableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.UserDataApp.Select(null, null, global::System.Data.DataViewRowState.Added);
                 if (((addedRows != null) 
                             && (0 < addedRows.Length))) {
-                    result = (result + this._signupTable_TableAdapter.Update(addedRows));
+                    result = (result + this._userDataAppTableAdapter.Update(addedRows));
                     allAddedRows.AddRange(addedRows);
                 }
             }
@@ -1303,13 +1027,13 @@ SELECT ID, FirstName, LastName, Username, Password, Email FROM SignupTable_ WHER
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private int UpdateDeletedRows(SignUpDBDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
+        private int UpdateDeletedRows(Section_126DataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
             int result = 0;
-            if ((this._signupTable_TableAdapter != null)) {
-                global::System.Data.DataRow[] deletedRows = dataSet.SignupTable_.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+            if ((this._userDataAppTableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.UserDataApp.Select(null, null, global::System.Data.DataViewRowState.Deleted);
                 if (((deletedRows != null) 
                             && (0 < deletedRows.Length))) {
-                    result = (result + this._signupTable_TableAdapter.Update(deletedRows));
+                    result = (result + this._userDataAppTableAdapter.Update(deletedRows));
                     allChangedRows.AddRange(deletedRows);
                 }
             }
@@ -1345,15 +1069,15 @@ SELECT ID, FirstName, LastName, Username, Password, Email FROM SignupTable_ WHER
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public virtual int UpdateAll(SignUpDBDataSet dataSet) {
+        public virtual int UpdateAll(Section_126DataSet dataSet) {
             if ((dataSet == null)) {
                 throw new global::System.ArgumentNullException("dataSet");
             }
             if ((dataSet.HasChanges() == false)) {
                 return 0;
             }
-            if (((this._signupTable_TableAdapter != null) 
-                        && (this.MatchTableAdapterConnection(this._signupTable_TableAdapter.Connection) == false))) {
+            if (((this._userDataAppTableAdapter != null) 
+                        && (this.MatchTableAdapterConnection(this._userDataAppTableAdapter.Connection) == false))) {
                 throw new global::System.ArgumentException("All TableAdapters managed by a TableAdapterManager must use the same connection s" +
                         "tring.");
             }
@@ -1389,13 +1113,13 @@ SELECT ID, FirstName, LastName, Username, Password, Email FROM SignupTable_ WHER
             try {
                 // ---- Prepare for update -----------
                 //
-                if ((this._signupTable_TableAdapter != null)) {
-                    revertConnections.Add(this._signupTable_TableAdapter, this._signupTable_TableAdapter.Connection);
-                    this._signupTable_TableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(workConnection));
-                    this._signupTable_TableAdapter.Transaction = ((global::System.Data.SqlClient.SqlTransaction)(workTransaction));
-                    if (this._signupTable_TableAdapter.Adapter.AcceptChangesDuringUpdate) {
-                        this._signupTable_TableAdapter.Adapter.AcceptChangesDuringUpdate = false;
-                        adaptersWithAcceptChangesDuringUpdate.Add(this._signupTable_TableAdapter.Adapter);
+                if ((this._userDataAppTableAdapter != null)) {
+                    revertConnections.Add(this._userDataAppTableAdapter, this._userDataAppTableAdapter.Connection);
+                    this._userDataAppTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(workConnection));
+                    this._userDataAppTableAdapter.Transaction = ((global::System.Data.SqlClient.SqlTransaction)(workTransaction));
+                    if (this._userDataAppTableAdapter.Adapter.AcceptChangesDuringUpdate) {
+                        this._userDataAppTableAdapter.Adapter.AcceptChangesDuringUpdate = false;
+                        adaptersWithAcceptChangesDuringUpdate.Add(this._userDataAppTableAdapter.Adapter);
                     }
                 }
                 // 
@@ -1456,9 +1180,9 @@ SELECT ID, FirstName, LastName, Username, Password, Email FROM SignupTable_ WHER
                 if (workConnOpened) {
                     workConnection.Close();
                 }
-                if ((this._signupTable_TableAdapter != null)) {
-                    this._signupTable_TableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(revertConnections[this._signupTable_TableAdapter]));
-                    this._signupTable_TableAdapter.Transaction = null;
+                if ((this._userDataAppTableAdapter != null)) {
+                    this._userDataAppTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(revertConnections[this._userDataAppTableAdapter]));
+                    this._userDataAppTableAdapter.Transaction = null;
                 }
                 if ((0 < adaptersWithAcceptChangesDuringUpdate.Count)) {
                     global::System.Data.Common.DataAdapter[] adapters = new System.Data.Common.DataAdapter[adaptersWithAcceptChangesDuringUpdate.Count];
